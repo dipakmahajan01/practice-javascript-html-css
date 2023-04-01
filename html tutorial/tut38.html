@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutorial for string</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+        var str = "this is a string";
+        console.log(str);
+        // First occurence of a substring 
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // last occurence of a substring 
+        position = str.lastIndexOf('is');
+        console.log(position);
+        // substring from a string 
+        // var substr = str.slice(1, 7);
+        // var substr = str.substring(1, 7);
+        var substr1 = str.substr(1, 3);
+        console.log(substr1);
+        // var replaced = str.replace('string', 'dipak');
+        // console.log(str)
+        // console.log(replaced)
+        // console.log(replaced.toUpperCase());
+        // console.log(replaced.toLowerCase());
+        var newString = str.concat('New String');
+        console.log(newString)
+        var strWithWhitespaces = "   this contains            Whitespace    ";
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim());
+    </script>
+</body>
+
+</html>

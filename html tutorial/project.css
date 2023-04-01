@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    background: url('dipak.jpg') no-repeat center center/cover;
+}
+
+.container-fluid {
+    text-align: center;
+    padding: 92px;
+    margin: 82px;
+    width: 50%;
+}
+
+.wrapper {
+    height: 100vh;
+    /* this part is important for centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-demo {
+    width: 31ch;
+    animation: typing 4s steps(22), blink .8s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
